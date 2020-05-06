@@ -1,0 +1,220 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: #fff;
+	font-family: Open Sans, Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+#container {
+	margin: 0 auto;
+	width: 1000px;
+	background-color: #FFF; 
+}
+
+.main-content {
+
+    padding-top: 120px;
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+
+#footer {
+    width: 100%;
+	background-color: #09F;
+	color: #fff;
+    padding: 0;
+    margin: 0;
+
+}
+
+header {
+    width: 100%;
+    
+}
+
+#facebookpage {
+	text-align:center;
+	color:#F0F;
+	margin: 0 auto;
+}
+
+	
+
+h1 {
+	
+	font-weight: bold;
+	text-align: center;
+	font-size: 2.0em;
+	font-family: 'Petit Formal Script', cursive;
+	
+}
+
+h2 {
+	
+	font-weight: bold;
+	font-size: 1.2em;
+	padding-left: 20px;
+    margin-top: 25px;
+}
+
+p {
+	font-size: 0.9em;
+	padding: 0 20px 10px;
+	color: #000;	
+	
+}
+
+
+
+a {
+	color: #FFF;
+	text-decoration: none;
+	padding: 0 25px;
+	font-size: 1.5em;
+}
+
+
+
+.inlineLink {
+	
+	color: #00F;
+	padding: 0;
+	font-size: 1.0em;
+}
+
+.picturelink {
+	height: 300px;
+	width: 300px; 
+	padding: 5px;
+	float: left;
+	
+}
+
+.button {
+	background-color:#6F3;
+	color: #FFF;
+}
+
+
+#imgdesc {
+	float: right;
+	padding-left: 20px;
+}
+
+#desc {
+	text-align: center;
+	padding-top: 20px;
+	
+}
+
+div.img
+{
+  
+  float: left;
+  
+  }	
+
+div.desc
+{
+	text-align: center;
+	width: 300px;
+	margin: 2px;
+	padding-bottom: 5px;
+}
+
+.fb-like-box
+{
+	float: right;
+}
+
+iframe {
+	float: right;
+	padding: 20px;
+}
+
+/* NAVIGATION */
+
+
+
+.navbar {
+    height: 120px;
+    background-color: #fff;
+}
+
+ul.nav {
+    margin: 35px 0;
+}
+
+a.navbar-brand img {
+    max-width: 100%;
+}
+
+.navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #080808;
+}
+
+ 
+/* JUMBOTRON */
+
+.jumbotron{
+    text-align: center;
+     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),  url(images/jumbtron_image.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/jumbtron_image.jpg);
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    height: 700px;
+    width: 100vw;
+  
+}
+
+.jumbotron .container {
+    margin: 200px;
+        
+}
+
+.jumbotron p {
+    margin-top: 40px;
+    color: #fff;
+}
+    
+.jumbotron h1 {
+        color: #fff;
+    }
+
+/* FEATURED SECTION */
+
+.thumbnail {
+    text-align: center;
+}
+
+.thumbnail img {
+    margin-bottom: 20px;
+}
+
+/* FEATURED SECTION */
+
+.featured {
+    margin: 0 20px;
+}
+
+/* MESSAGE SECTION */
+
+.message {
+    width: 100%;
+    background-image: url(/images/paper_texture327.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.padding-top {
+    padding-top: 20px;
+}
+
+.information {
+    padding-top: 20px;
+}

@@ -1,0 +1,717 @@
+/*
+Theme Name: Jacobs Footsteps
+Theme URI: http://underscores.me/
+Author: Matt Fletcher
+Author URI: http://www.fletcher-design.co.uk
+Description: A Modern WordPress Theme built using Bootstrap
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: jacobs-footsteps
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Jacobs Footsteps is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+	## Small Menu
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
+	margin: 0 0 1.5em;
+	overflow: hidden;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float: right;
+	padding-right: 10px;
+	
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+	float: left;
+	padding-left: 10px;
+	text-align: right;
+	
+}
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget {
+	margin: 0 0 1.5em;
+}
+
+/* Make sure select elements fit in widgets. */
+.widget select {
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.byline,
+.updated:not(.published) {
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 20px;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
+.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+	display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+.gallery {
+	margin-bottom: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-caption {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+## Custom CSS
+--------------------------------------------------------------*/
+
+
+body {
+	background-color: #fff;
+	font-family: Open Sans, Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    margin: 0 auto;
+
+}
+
+
+#container {
+	margin: 0 auto;
+	width: 1000px;
+	background-color: #FFF; 
+}
+
+.main-content {
+
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+
+#footer {
+    width: 100%;
+	background-color: #09F;
+	color: #fff;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+
+header {
+    width: 100%;
+    
+}
+
+header.entry-title  {
+	margin-top: 120px;
+
+}
+
+.entry-title {
+	text-align: center;
+}
+
+.entry-title a {
+	font-size: 1.5em;
+}
+
+.entry-header img {
+	display: block;
+	margin: 0 auto;
+}
+
+.post-edit-link {
+	margin-left: 10px;
+}
+
+#facebookpage {
+	text-align:center;
+	color:#F0F;
+	margin: 0 auto;
+}
+
+	
+
+h1 {
+	
+	font-weight: bold;
+	text-align: center;
+	font-size: 2.0em;
+	
+	
+}
+
+.section-title {
+	padding-bottom: 20px;
+}
+
+h2 {
+	
+	font-weight: bold;
+	font-size: 1.2em;
+	padding-left: 20px;
+    margin-top: 25px;
+}
+
+p {
+	font-size: 1em;
+	padding: 0 20px 10px;
+	color: #000;	
+	
+}
+
+
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+.icon-bar {
+	background-color: #000;
+}
+
+.inlineLink {
+	
+	color: #00F;
+	padding: 0;
+	font-size: 1.0em;
+}
+
+.nav-previous a {
+	font-size: 0.9em;
+	color: #23527c;
+    text-decoration: underline;
+}
+.nav-next a {
+	font-size: 0.9em;
+	color: #23527c;
+    text-decoration: underline;
+}
+
+.nav a {
+	font-size: 1.5em;
+}
+
+.entry-footer a {
+	font-size: 0.9em;
+	color: #23527c;
+    text-decoration: underline;
+	
+}
+	
+.picturelink {
+	height: 300px;
+	width: 300px; 
+	padding: 5px;
+	float: left;
+	
+}
+
+.button {
+	background-color:#6F3;
+	color: #FFF;
+}
+
+
+#imgdesc {
+	float: right;
+	padding-left: 20px;
+}
+
+#desc {
+	text-align: center;
+	padding-top: 20px;
+	
+}
+
+div.img
+{
+  
+  float: left;
+  
+  }	
+
+div.desc
+{
+	text-align: center;
+	width: 300px;
+	margin: 2px;
+	padding-bottom: 5px;
+}
+
+.fb-like-box
+{
+	float: right;
+}
+
+iframe {
+	padding: 20px;
+}
+
+.glyphicon {
+	font-size: 80px;
+	display: block;
+	text-align: center;
+}
+
+#nf-form-1-cont {
+	margin: 0 40px;
+}
+
+
+/* NAVIGATION */
+
+
+
+.navbar {
+    height: 120px;
+    background-color: #fff;
+	margin: 30px 0;
+}
+
+ul.nav.navbar-nav.navbar-right {
+	margin: 35px 0;
+	background-color: #fff;
+
+}
+
+.navbar-brand {
+	padding-left: 45px;
+}
+	
+
+a.navbar-brand img {
+    max-width: 100%;
+}
+
+.navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #080808;
+}
+
+.navbar-toggle {
+	padding: 45px 10px !important;
+}
+
+#bs-example-navbar-collapse-1 {
+	position:relative;
+	z-index: 1000;
+}
+
+@media (max-width: 935px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+/* JUMBOTRON */
+
+.jumbotron{
+    text-align: center;
+    background-image:url("../../uploads/2016/12/jumbotron_image2.jpg");
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    height: 600px;
+    width: 100vw;
+}
+
+. jumborton img {
+	height: 100%;
+	width: auto;
+}
+.jumbotron .container {
+    margin-top: 280px;
+        
+}
+
+.jumbotron p {
+    margin-top: 40px;
+    color: #fff;
+}
+    
+.jumbotron h1 {
+        color: #fff;
+    }
+
+/* FEATURED SECTION */
+
+.thumbnail {
+    text-align: center;
+}
+
+.thumbnail img {
+    margin-bottom: 20px;
+}
+
+/* FEATURED SECTION */
+
+.featured {
+    margin: 0 20px;
+}
+
+/* MESSAGE SECTION */
+
+.message {
+    width: 100%;
+    background-image: url('/wp-content/themes/jacobs-footsteps/assests/images/images/paper_texture327.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.padding-top {
+    padding-top: 20px;
+}
+
+.information {
+    padding-top: 20px;
+}
+
+a.post-edit-link {
+    font-size: 12px;
+}
+
+a.moretag {
+	font-size: 0.9em;
+	color: #23527c;
+}
+
+span a {
+	font-size: 0.9em;
+}
+
+/* POST GRID CSS */
+
+.columns { margin: 1em 0; }
+	.columns:before, .columns:after { content: " "; display: table; }
+	.columns:after { clear: both; }
+	.column { float: left; margin: 0 2.5% 10px 0; width: 22.5%; }
+	.column:nth-child(4n) { margin-right: 0; }
+	.column:nth-child(4n+1) { margin-left: 0; clear: left; }
+	.column img { max-width: 100%; height: auto; margin: 0 auto; display: block; }
+	.column p {text-align: center;}
+h2.entry-title { font-size: 12px; font-weight: bold; line-height: 1.5;} 
+
+@media (max-width: 750px) {
+.column {
+	width: 47.5%;
+}
+
+@media (max-width: 400px) {
+	.column {
+		width: 97.5%;
+	}
+
+	
+.columns img {
+	display: block;
+	margin: 0 auto;
+
+}
+
+.col-md-4:after {
+	clear:both;
+}
+

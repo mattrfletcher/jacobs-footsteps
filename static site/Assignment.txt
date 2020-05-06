@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Assignment</title>
+<link rel="stylesheet" type="text/css" href="jacobs_footsteps.css">
+</head>
+
+<body>
+
+<div id="container">
+<h1> Assignment </h1>
+
+<a href="index.html"> Home </a> <a href="information.html"> Information </a> <a href="videos.html"> Videos </a>  <a href="news.html"> News </a> <a href="donate.html"> Donate </a> <a href="contact.php"> Contact </a> 
+
+<h2> The purpose of the website </h2>
+
+<p>The purpose of the site is to help with the fundraising for my nephew Jacob so that he can get physiotherapy and potentially an operation in America to help with his Cerebral Palsy.  <br>
+ The audience of the website is anyone that is interested in helping with the fundraising or donating to it, and would like to know more about Jacob and his condition. It could also be used as an information resource for someone looking for a simple explanation of Cerebral Palsy and SDR. <br>
+  
+<h2> How I have structured my website </h2>
+  
+  At the top of the  page is a title, this is a heading 1. Next are the links to the other pages, these open up in the same window.  Below this I  have the text which is in paragraphs. On the Index page there are links, these are in-line with the rest of the text and open in a new window/tab.  Also on all of the pages except the contact page, there is a picture on the right. <br>
+  On the information page I have additional headings these are a heading 2. <br>
+  On the contact page I have a form, this has three text boxes and a text area each with their own label and a button. <br>
+  The videos page also contains four images that when clicked on, open a YouTube video in a new window/tab.  <br>
+  
+  <h2> How  CSS has been used to style the site </h2>
+  
+  <p> The body has a  background colour of light blue and a text colour of white with a font family  of Arial, Helvetica, and sans serif.  <br>
+  I have a container div on all pages so that the content is in the centre of the page. <br>
+  The headings have a font weight of bold and the heading 1’s  are a font size of 2.0 em and aligned in the centre and the heading 2’s are a 1.2 em. <br>
+  The links have been given a colour of white, no text decoration so that there isn’t any underline and a padding right and left of 50px so that they are spaced out well at the top of the page. <br>
+  The images have been given padding so there is some space between them and the rest of the content and they are floated right so that they are in-line with the main text <br>
+  The in-line links on the index page have been coloured dark blue so that they stand out and have no padding so that there are no big gaps between them and the other words. <br>
+  The form has been set out so that it is in the centre of the screen and the labels and boxes are level with each other but on different lines. The labels have been given a colour of white so that they fit in with the rest of the website. The contact button has been given a background colour of dark grey so that it stands out. <br>
+  The pictures on the video page have been set out so that they are all in-line and been given some padding so that there is some space between each of  the elements. The descriptions have been given a width of 300px and the text has been aligned centrally so that there is a description underneath the pictures and they are in the centre. <br>
+  Finally, I have a rule for printing so that when printed out, the background is white with text and links being black. </p>
+</div>
+</body>
+</html>
